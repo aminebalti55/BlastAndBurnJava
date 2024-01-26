@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="moderationPane" prefHeight="720.0" prefWidth="1084.0" style="-fx-background-color: #FFFEFB; -fx-background-radius: 1em;" stylesheets="@../../../../resources/css/tab.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blastandburn.controllers.ui.backoffice.session.SessionController">
+   <children>
+      <FontAwesomeIconView fx:id="close" fill="#13547a" glyphName="CLOSE" layoutX="1059.0" layoutY="24.0" onMouseClicked="#closeAction" size="20" style="-fx-cursor: hand;" />
+      <FontAwesomeIconView fill="#13547a" glyphName="MINUS" layoutX="1035.0" layoutY="25.0" onMouseClicked="#minAction" size="18" style="-fx-cursor: hand;" />
+      <TableView fx:id="SessionTable" layoutX="48.0" layoutY="374.0" prefHeight="286.0" prefWidth="974.0" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="62.0">
+         <columns>
+            <TableColumn fx:id="titleCol" prefWidth="247.0" text="Title" />
+            <TableColumn fx:id="descriptionCol" minWidth="0.0" prefWidth="327.0" text="Description" />
+            <TableColumn fx:id="DaysCol" prefWidth="96.0" text="Days" />
+            <TableColumn fx:id="catgCol" prefWidth="176.0" text="category" />
+            <TableColumn fx:id="priceCol" minWidth="0.0" prefWidth="127.0" text="price" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="802.0" layoutY="311.0" onAction="#addCategoryAction" prefHeight="35.0" prefWidth="163.0" style="-fx-background-color: #303c5d #303c5d; -fx-background-radius: 1em;" text="Categories" textFill="#fffefb">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <PieChart fx:id="pieChart" layoutX="624.0" layoutY="39.0" prefHeight="223.0" prefWidth="355.0" />
+      <LineChart fx:id="lineChart" layoutX="66.0" layoutY="24.0" prefHeight="274.0" prefWidth="472.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <FontAwesomeIconView fill="#797777" glyphName="TRASH" layoutX="1004.0" layoutY="336.0" onMouseClicked="#deleteSessionAction" size="30" wrappingWidth="31.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="tasksPane" cache="true" cacheHint="SPEED" hbarPolicy="NEVER" prefHeight="593.0" prefWidth="1074.0" style="-fx-background-color: transparent;" styleClass="scroll-bar" stylesheets="@../../../../resources/css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blastandburn.controllers.ui.frontoffice.task.OngoingTasksController">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1848.0" prefWidth="1080.0" style="-fx-background-color: #FFFEFB;">
+         <children>
+            <Label layoutX="38.0" layoutY="39.0" prefHeight="46.0" prefWidth="301.0" style="-fx-font-size: 30px;" styleClass="text" stylesheets="@../../../../resources/css/main.css" text="Ongoing Sessions" textFill="#eb331e">
+               <font>
+                  <Font name="Century Gothic Bold" size="30.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#e13232" glyphName="ARROW_LEFT" layoutX="4.0" layoutY="21.0" onMouseClicked="#backAction" size="20" style="-fx-cursor: hand;" wrappingWidth="16.428571701049805" />
+            <Pagination fx:id="pagination" layoutX="19.0" layoutY="142.0" prefHeight="1479.0" prefWidth="1028.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

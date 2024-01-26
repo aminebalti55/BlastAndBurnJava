@@ -1,0 +1,14 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 2, 2021, 11:14:01 AM
+    Author     : user
+*/
+.default-color0.chart-pie { -fx-pie-color: #ff4d6d; }
+.default-color1.chart-pie { -fx-pie-color: #c9184a; }
+.default-color2.chart-pie { -fx-pie-color: #a4133c; }
+.default-color3.chart-pie { -fx-pie-color: #800f2f; }
+.default-color4.chart-pie { -fx-pie-color: #590d22; }

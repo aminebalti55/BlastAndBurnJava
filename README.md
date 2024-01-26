@@ -1,1 +1,1 @@
-# BlastAndBurnJava
+# BlastAndBurn

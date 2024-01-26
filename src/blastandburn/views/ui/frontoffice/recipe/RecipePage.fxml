@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="recipePane" cache="true" cacheHint="SPEED" hbarPolicy="NEVER" prefHeight="593.0" prefWidth="1074.0" style="-fx-background-color: transparent;" styleClass="scroll-bar" stylesheets="@../../../../resources/css/main.css" vvalue="1.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blastandburn.controllers.ui.frontoffice.recipe.RecipePageController">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2116.0" prefWidth="1080.0" style="-fx-background-color: #FFFEFB;">
+         <children>
+            <Label layoutX="38.0" layoutY="28.0" prefHeight="46.0" prefWidth="301.0" style="-fx-font-size: 30px;" styleClass="text" stylesheets="@../../../../resources/css/main.css" text="Browse Categories" textFill="#303c5d">
+               <font>
+                  <Font name="Century Gothic Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="463.0" prefHeight="54.0" prefWidth="230.0" style="-fx-font-size: 30px;" styleClass="text" stylesheets="@../../../../resources/css/main.css" text="All Recipes" textFill="#303c5d">
+               <font>
+                  <Font name="Century Gothic Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="938.0" layoutY="38.0" onMouseClicked="#allCategories" style="-fx-font-size: 20px; -fx-cursor: hand;" styleClass="text" stylesheets="@../../../../resources/css/main.css" text="View All" textFill="#13547a">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <HBox fx:id="categoriesHBox" alignment="CENTER" layoutX="21.0" layoutY="93.0" prefHeight="237.0" prefWidth="1013.0" spacing="40.0" />
+            <JFXButton fx:id="addBtn" layoutX="861.0" layoutY="426.0" onAction="#addRecipeAction" prefHeight="25.0" prefWidth="171.0" style="-fx-background-color: e91a37; -fx-background-radius: 1em; -fx-font-size: 18px; -fx-opacity: 1;" styleClass="text" stylesheets="@../../../../resources/css/main.css" text="Add new recipe" textFill="#fffefb" visible="false">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Pagination fx:id="pagination" layoutX="35.0" layoutY="535.0" maxPageIndicatorCount="3" pageCount="0" prefHeight="1572.0" prefWidth="1028.0" stylesheets="@../../../../resources/css/pagination.css" />
+            <JFXComboBox fx:id="ComboBox" layoutX="236.0" layoutY="474.0" onAction="#ComboBoxRole" prefHeight="29.0" prefWidth="83.0" visible="false" />
+            <JFXTextField fx:id="searchRecipe" layoutX="364.0" layoutY="482.0" onKeyPressed="#rechercheRecipe" prefHeight="31.0" prefWidth="171.0" promptText="search recipe" />
+            <FontAwesomeIconView fx:id="refreshBtn" fill="#13547a" glyphName="REFRESH" layoutX="828.0" layoutY="450.0" onMouseClicked="#refreshPage" size="20" visible="false" />
+            <JFXButton fx:id="bmi" layoutX="640.0" layoutY="426.0" onAction="#showbmi" prefHeight="25.0" prefWidth="171.0" style="-fx-background-color: e91a37; -fx-background-radius: 1em; -fx-font-size: 18px;" styleClass="text" stylesheets="@../../../../resources/css/main.css" text="BMI" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

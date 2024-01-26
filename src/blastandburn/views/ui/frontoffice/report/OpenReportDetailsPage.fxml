@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="313.0" prefWidth="378.0" style="-fx-background-color: #FFFEFB; -fx-background-radius: 1.25em; -fx-border-color: linear-gradient(to right top, #d24646, #d83f42, #de363e, #e32a3b, #e91a37); -fx-border-radius: 1em; -fx-border-width: 5;" stylesheets="@../../../../resources/css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blastandburn.controllers.ui.frontoffice.report.OpenReportDetailsPageController">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="31.0" layoutY="39.0" prefHeight="29.0" prefWidth="317.0" style="-fx-font-size: 20px;" text="Title" textFill="#e91a37" />
+      <FontAwesomeIconView fill="#e91a37" glyphName="SEND" layoutX="328.0" layoutY="219.0" size="28" wrappingWidth="30.0" />
+      <Label fx:id="note" alignment="TOP_LEFT" layoutX="36.0" layoutY="93.0" prefHeight="169.0" prefWidth="307.0" style="-fx-font-size: 18px;" text="Title Title Title Title Title Title Title Title Title" wrapText="true" />
+      <FontAwesomeIconView fill="#e91a37" glyphName="LOCK" layoutX="334.0" layoutY="276.0" onMouseClicked="#openAlert" size="35" style="-fx-cursor: hand;" text="" />
+      <FontAwesomeIconView fill="#e91a37" glyphName="CLOSE" layoutX="350.0" layoutY="27.0" onMouseClicked="#close" size="20" style="-fx-cursor: hand;" />
+      <AnchorPane layoutX="10.0" layoutY="249.0" prefHeight="44.0" prefWidth="48.0" style="-fx-background-color: linear-gradient(to right top, #d24646, #d83f42, #de363e, #e32a3b, #e91a37); -fx-background-radius: 0.65em 0 1em 0;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIconView fx:id="icon" fill="WHITE" glyphName="APPLE" layoutX="10.0" layoutY="30.0" size="25" />
+         </children>
+      </AnchorPane>
+      <JFXTextArea fx:id="rep" focusColor="WHITE" layoutX="23.0" layoutY="186.0" prefHeight="100.0" prefWidth="298.0" style="-fx-border-color: #e91a37; -fx-border-radius: 1em; -fx-border-width: 2;" unFocusColor="WHITE" />
+      <JFXButton fx:id="sendmaill" layoutX="324.0" layoutY="192.0" onAction="#mailling" opacity="0.0" prefHeight="34.0" prefWidth="41.0" text="Button" />
+   </children>
+</AnchorPane>
