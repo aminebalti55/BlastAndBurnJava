@@ -35,7 +35,7 @@ A step by step series of examples that tell you how to get a development environ
 
 ## :busts_in_silhouette: Authors
 
-- **Your Name** - *Initial work* - [YourGithubUsername](https://github.com/YourGithubUsername)
+- **Med Amine Balti** - *Initial work* - [aminebalti55](https://github.com/aminebalti55)
 
 ## :page_with_curl: License
 
